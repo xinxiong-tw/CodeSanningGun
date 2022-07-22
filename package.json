@@ -1,0 +1,18 @@
+{
+  "name": "qrcode-scanner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "keyboard.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jimp": "^0.16.1",
+    "node-webcam": "^0.8.1",
+    "qrcode-reader": "^1.0.4",
+    "sendkeys-macos": "^1.3.0"
+  }
+}
