@@ -1,5 +1,18 @@
-const sendKeys = require('sendkeys-macos');
+const os = process.platform;
 
-module.exports = (text) => {
-    sendKeys(null, text, {delay: 0, initialDelay: 0})
+let input = () => {
+};
+
+if (os === 'darwin') {
+    const sendKeys = require('sendkeys-macos');
+    input = (text) => {
+        sendKeys(null, text, {delay: 0, initialDelay: 0})
+    }
+} else if (os === "win32") {
+    const sendKeys = require('sendkeys');
+    input = (text) => {
+        sendKeys(text);
+    }
 }
+
+module.exports = input;

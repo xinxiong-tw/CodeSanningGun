@@ -10,9 +10,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "jimp": "^0.16.1",
+    "jimp": "^0.16.0",
     "node-webcam": "^0.8.1",
-    "qrcode-reader": "^1.0.4",
-    "sendkeys-macos": "^1.3.0"
+    "qrcode-reader": "^1.0.4"
+  },
+  "optionalDependencies": {
+    "sendkeys-macos": "^1.3.0",
+    "sendkeys": "^1.1.1"
   }
 }
